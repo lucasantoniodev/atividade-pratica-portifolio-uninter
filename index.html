@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+
+<body>
+    <!-- Menu de navegação -->
+    <header>
+        <nav>
+            <div class="app-navbar">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <ul class="menu">
+                    <li><a href="#about" class="bottomless">About</a></li>
+                    <li><a href="#contact" class="bottomless">Contact</a></li>
+                    <li><a href="#social" class="bottomless">Social</a></li>
+                    <li><button type="button" class="btn btn-dark"><a href="#portifolio">View Works</a></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <!-- Elemento para referência uma posição da pa´gina -->
+        <scroll-container>
+            <scroll-page id="about">
+                <!-- Perfil -->
+                <div class="profile">
+                    <img src="assets/profile.png" alt="Profile">
+                    <div class="about">
+                        <p class="start-message">Hello,</p>
+                        <p class="message">Eu sou o Lucas, um estudante de Engenharia de Software, apaixonado por
+                            tecnologia,
+                            jogos e esportes físicos. Atualmente focado em desenvolvimento FullStack em aplicações
+                            mobile
+                            utilizando Dart e Flutter</p>
+                        <p class="message">I'm Lucas, a software engineering student, passionate about technology, games
+                            and
+                            physical sports. Currently focused on mobile development with Dart and Flutter.</p>
+                    </div>
+                </div>
+                <!-- Currículo profissional -->
+                <div class="professional">
+                    <p class="title">Professional</p>
+                    <div class="items">
+                        <ul>
+                            <li>Engenharia de Software, Uninter (3º Semestre)</li>
+                            <li>Técnico em Eletrotécnica, SENAI (Concluído em 2018)</li>
+                            <li>Dart & Flutter (Básico)</li>
+                            <li>Javascript & Typescript (Básico)</li>
+                            <li>Python (Básico)</li>
+                            <li>Express, NestJS, Mysql & Postgres (Básico)</li>
+                            <li>Golang (básico)</li>
+                        </ul>
+                    </div>
+                </div>
+            </scroll-page>
+            <scroll-page id="portifolio">
+                <!-- Portifólio de desenvolvimento mobile -->
+                <div class="portifolio">
+                    <p class="title">Portifolio Mobile</p>
+                    <div class="items">
+                        <div class="projects">
+
+                            <img src="assets/project-1.jfif" alt="day_and_night_animation">
+                            <img src="assets/project-2.jfif" alt="day_and_night_animation">
+                            <a href="https://github.com/lucasantoniodev/login_day_and_night_animation_ui">
+                                <p>Day and night animation</p>
+                            </a>
+                        </div>
+                        <div class="projects">
+                            <img src="assets/project-3.jfif" alt="Anotações de atividades">
+                            <img src="assets/project-4.jfif" alt="Anotações de atividades">
+                            <a href="https://github.com/lucasantoniodev/anotacoes_de_atividades">
+                                <p>Anotações de atividades com Bloc</p>
+                            </a>
+                        </div>
+                        <div class="projects">
+                            <img src="assets/project-5.jfif" alt="Calculadora com gerenciamento de estado (MobX)">
+                            <a href="https://github.com/lucasantoniodev/calculadora_mobx">
+                                <p>Calculadora com MobX</p>
+                            </a>
+                        </div>
+                        <div class="projects">
+                            <img src="assets/project-6.jfif" alt="Calculadora IMC">
+                            <img src="assets/project-7.jfif" alt="Calculadora IMC">
+                            <a href="https://github.com/lucasantoniodev">
+                                <p>Calculadora IMC</p>
+                            </a>
+                        </div>
+                        <div class="projects">
+                            <img src="assets/project-8.jfif" alt="Autenticação com Firebase">
+                            <img src="assets/project-9.jfif" alt="Autenticação com Firebase">
+                            <a href="https://github.com/lucasantoniodev/sistema_de_login_com_firebase">
+                                <p>Autenticação com Firebase</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </scroll-page>
+            <scroll-page id="social">
+                <div class="social">
+                    <!-- Redes sociais -->
+                    <p class="title">Social</p>
+                    <div class="items">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/lucasantoniosdc/" target="_blank">Linkedin</a></li>
+                            <li><a href="https://www.github.com/lucasantoniodev/" target="_blank">Github</a></li>
+                            <li><a href="https://www.instagram.com/luucassdc/" target="_blank">Instagram</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </scroll-page>
+            <scroll-page id="contact">
+                <!-- Contato -->
+                <!-- Conteúdo consumido da documentação oficial do boostrap -->
+                <div class="contact">
+                    <p class="title">Contact us</p>
+                    <div class="items">
+                        <section class="mb-4">
+                            <div class="row">
+                                <div class="col-md-9 mb-md-0 mb-5">
+                                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="name" name="name" class="form-control">
+                                                    <label for="name" class="">Your name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="email" name="email" class="form-control">
+                                                    <label for="email" class="">Your email</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="md-form mb-0">
+                                                    <input type="text" id="subject" name="subject" class="form-control">
+                                                    <label for="subject" class="">Subject</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="md-form">
+                                                    <textarea type="text" id="message" name="message" rows="2"
+                                                        class="form-control md-textarea"></textarea>
+                                                    <label for="message">Your message</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="text-center text-md-center">
+                                        <a class="btn btn-primary"
+                                            onclick="document.getElementById('contact-form').submit();">Send</a>
+                                    </div>
+                                    <div class="status"></div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                            <p>Salvador, Bahia</p>
+                                        </li>
+                                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                            <p>lucasantoniodev@gmail.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </scroll-page>
+        </scroll-container>
+    </div>
+</body>
+
+</html>
